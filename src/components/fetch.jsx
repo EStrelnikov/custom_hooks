@@ -12,6 +12,7 @@ export const Fetch = () => {
         debugger
         return (
           <div>
+            <h1>task 1</h1>
             <div>
               <button onClick={() => refetch({
                 params: {
