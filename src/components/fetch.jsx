@@ -9,7 +9,6 @@ export const Fetch = () => {
           error,
           refetch
         } = useFetch('https://jsonplaceholder.typicode.com/posts');
-        debugger
         return (
           <div>
             <h1>task 1</h1>
