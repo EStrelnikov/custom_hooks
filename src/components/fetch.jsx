@@ -1,5 +1,5 @@
 import React from 'react'
-import { useFetch } from './../custom hooks/useFetch';
+import { useFetch } from '../custom_hooks/useFetch';
 
 export const Fetch = () => {
     function Demo() {
@@ -9,6 +9,7 @@ export const Fetch = () => {
           error,
           refetch
         } = useFetch('https://jsonplaceholder.typicode.com/posts');
+        debugger
         return (
           <div>
             <div>
