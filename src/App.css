@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-header {
@@ -11,4 +10,38 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.custom_input {
+  gap: 5px;
+  display: flex;
+  height: 100%;
+}
+
+.custom_input_block {
+  position: relative;
+}
+
+.form_sex {
+  display: flex;
+  gap: 10px;
+}
+
+.custom_input_icon {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: black;
+  font-size: 1rem;
+  width: 15px;
+}
+
+.custom_input_input {
+    margin: 0 0 0 5px;
+    height: 20px;
+}
+
+.custom_input_input_icon {
+  padding: 0 0 0 20px;
+  height: 20px;
 }
