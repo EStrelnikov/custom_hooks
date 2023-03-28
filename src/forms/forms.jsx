@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Signin } from "../forms/signin";
-import { Signup } from "../forms/signup";
+import { Signin } from "./signin";
+import { Signup } from "./signup";
 
 export const Forms = () => {
     const [newProfile, setNewProfile] = useState(false);
