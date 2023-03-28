@@ -8,7 +8,8 @@ export function useLocalStorage(tokenName) {
   }
 
   function removeItem() {
-    delete localStorage.token;
+    delete localStorage[token];
+    console.log(token);
   }
   setItem(token);
   return [token, { setItem, removeItem }];
