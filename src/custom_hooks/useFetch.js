@@ -17,7 +17,7 @@ export function useFetch(url) {
     }
   }
   useEffect(() => {
-    refetch(url);
+    refetch();
   }, [url]);
   return {
     data,
