@@ -1,16 +1,14 @@
 import "./App.css";
-import { Fetch } from "./components/fetch";
-import { Hover } from "./components/hover";
-import { LocalStorage } from "./components/localStorage";
+
+import { Forms } from "./forms/forms";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <p>Custom Hooks Tasks</p>
-        <Fetch />
-        <LocalStorage />
-        <Hover />
+        <Forms />
       </header>
     </div>
   );
