@@ -1,17 +1,8 @@
 import "./App.css";
-
-import { Forms } from "./forms/forms";
-
+import RouterApp from "./components/router_components/routerApp";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Custom Hooks Tasks</p>
-        <Forms />
-      </header>
-    </div>
-  );
+  return <RouterApp />;
 }
 
 export default App;
