@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
     return (
         <div className='container'>
-            <img src='/src/img/bg.png' className="img-fluid" alt="..." />
+            <div className='title text-center mt-5 fs-1 fw-weight-bold fst-italic'>Rick and Morty</div>
         </div>
     )
 } 
