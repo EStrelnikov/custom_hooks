@@ -1,18 +1,8 @@
 import "./App.css";
-import { WindowScroll } from "./components/windowScroll.jsx";
-import { ViewportSize } from "./components/viewportSize";
-
+import RouterApp from "./components/router_components/routerApp";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Custom Hooks Tasks</p>
-        <WindowScroll />
-        <ViewportSize />
-      </header>
-    </div>
-  );
+  return <RouterApp />;
 }
 
 export default App;
