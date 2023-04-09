@@ -1,14 +1,12 @@
 import "./App.css";
-
-import { Forms } from "./forms/forms";
-
+import { ViewportSize } from "./components/viewportSize";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <p>Custom Hooks Tasks</p>
-        <Forms />
+        <ViewportSize />
       </header>
     </div>
   );
