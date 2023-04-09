@@ -1,6 +1,6 @@
 import React  from 'react';
 import { Link } from 'react-router-dom';
-import { useDataContext } from './../hooks/useData';
+import { useDataContext } from './../context/dataContex';
 
 const Episodes = () => {
     const {episodes} = useDataContext();
@@ -10,7 +10,7 @@ const Episodes = () => {
                 { 
                     episodes.map( el => (
                         <li key={el.id}>
-                            <Link to={`/episodes/${ el.id }`}>{el.name}</Link>
+                            <Link to={`/categories/episodes/${ el.id }`}>{el.name}</Link>
                         </li>
                     ))
                 }

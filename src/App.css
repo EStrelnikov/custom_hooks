@@ -46,3 +46,10 @@
   height: 20px;
 }
 
+.active {
+  font-weight: 600;
+}
+
+li {
+  list-style-type: none;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import { AuthStatus } from './../authStatus';
 
 const Navigation = () => {
     return (
@@ -9,21 +10,16 @@ const Navigation = () => {
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="container-fluid">
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/">Главная</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/heroes">Герои</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/episodes">Эпизоды</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/locations">Локации</NavLink>
-                        </li>
-                    </ul>
+                    <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/">Главная</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/categories">Категории</NavLink>
+                            </li>
+                        </ul>
+                        <AuthStatus />
                     </div>
                 </div>
             </nav>

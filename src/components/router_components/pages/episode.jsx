@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, useParams } from 'react-router';
-import { useDataContext } from './../hooks/useData';
+import { useDataContext } from './../context/dataContex';
 
 const Episode = () => {
     const {episodes} = useDataContext();

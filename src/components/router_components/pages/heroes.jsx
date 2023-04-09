@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDataContext } from '../hooks/useData';
+import { useDataContext } from './../context/dataContex';
 import { Link } from 'react-router-dom';
 
 const Heroes = () => {
@@ -11,7 +11,7 @@ const Heroes = () => {
                     characters.map( el => (
                         <li style={{'listStyleType': 'none'}} className='p-3' key={el.id}>
                             <img src={ el.image } alt={el.name} height='100px' className='me-3'/>
-                            <Link to={`/heroes/${ el.id }`}>{el.name}</Link>
+                            <Link to={`/categories/heroes/${ el.id }`}>{el.name}</Link>
                         </li>
                     ))
                 }
