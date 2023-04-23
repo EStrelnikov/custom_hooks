@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { AuthStatus } from './../authStatus';
+import Loading from './loading';
+import ErrorBoundary from './errorBoundary';
+
+
 
 const Navigation = () => {
     return (
@@ -23,7 +27,11 @@ const Navigation = () => {
                     </div>
                 </div>
             </nav>
-            <Outlet />
+            <Suspense fallback={<Loading />}>
+                <ErrorBoundary>
+                    <Outlet />
+                </ErrorBoundary>
+            </Suspense>
         </>    
     )
 } 
