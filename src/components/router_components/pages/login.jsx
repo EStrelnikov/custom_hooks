@@ -19,9 +19,12 @@ export const Login = () => {
     return (
         <>
             <form style={{'margin': '50px 0 0 0', 'text-align': 'center'}} onSubmit={handleSubmit}>
-                <label>
-                    Логин: <input type='text' name='login'/>
-                </label>
+                <div>
+                    <label>
+                        Логин: <input type='text' name='login'/>
+                    </label>
+                </div>
+                <button style={{width: '241px', margin: '5px 0 0 0'}}>Войти</button>
             </form>
         </>
     )

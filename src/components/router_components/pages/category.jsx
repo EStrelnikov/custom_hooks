@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import Loading from './loading';
 
 const Category = () => {
     return (
@@ -15,7 +16,9 @@ const Category = () => {
                     <NavLink className="nav-link" to="/categories/locations">Локации</NavLink>
                 </li>
             </ul>
-            <Outlet />
+            <Suspense fallback={<Loading />}>
+                <Outlet />
+            </Suspense>    
         </>
     )
 } 
