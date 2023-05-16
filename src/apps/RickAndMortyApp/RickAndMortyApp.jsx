@@ -25,8 +25,7 @@ const NotFound = lazy(() => import('./pages/notFound').then(module => ({
 
 
 
-const RouterApp = () => {
-    
+const RickAndMortyApp = () => {
     return (
           <AuthProvider>
             <DataProvider>
@@ -47,15 +46,15 @@ const RouterApp = () => {
                             <Route index element={<Episodes />} />
                             <Route path=':id' element={<Episode />} />
                         </Route>
-                      </Route>  
+                      </Route>
                       <Route path='*' element={<NotFound />} />
                       <Route path='/login' element={<Login />} />
                   </Route>
                 </Routes>
-              </Suspense>  
+              </Suspense>
             </DataProvider>
-          </AuthProvider>  
+          </AuthProvider>
     )
-} 
+}
 
-export default RouterApp
+export default RickAndMortyApp
