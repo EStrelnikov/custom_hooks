@@ -1,11 +1,11 @@
 import React from 'react';
-import { Navigate, useParams } from 'react-router';
-import { useDataContext } from './../context/dataContex';
+import { Navigate } from 'react-router';
+import {useLocation} from 'react-router-dom'
 
 const Episode = () => {
-    const {episodes} = useDataContext();
-    const  { id }  = useParams();
-    const [item] = episodes.filter(el => el.id === Number(id));
+    const location = useLocation();
+    const item = location.state;
+    // const  { id }  = useParams();
     return (
         item 
             ? 
